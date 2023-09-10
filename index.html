@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="./assets/fav-icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Headlights Forever</title>
+  <style>
+    .poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .roboto {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .bg-pOrange2 {
+      background-color: #db8023;
+    }
+
+    .bg-pOrange {
+      background-color: #db9423;
+    }
+
+    label::after {
+      content: '+';
+      margin-left: auto;
+      font-size: 24px;
+    }
+
+    .accordion-checkbox[type='checkbox'] {
+      display: none;
+    }
+
+    .accordion .content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s, padding 0.5s;
+    }
+
+    .accordion .accordion-checkbox[type='checkbox']:checked+label+.content {
+      max-height: 400px;
+      padding-bottom: 20px;
+    }
+
+    .accordion .accordion-checkbox[type='checkbox']:checked+label::after {
+      content: '-';
+    }
+  </style>
+</head>
+
+<body class="poppins">
+  <header class="mb-5 lg:mb-0">
+    <div
+      class="text-lg flex flex-col lg:flex-row justify-between py-2 px-5 xl:px-20  items-center gap-5">
+      <a href="/">
+        <div class="max-w-[16rem]">
+          <img src="./assets/headlights-logo.png" alt="">
+        </div>
+      </a>
+      <div class="flex flex-col lg:flex-row justify-between lg:min-w-[60%] gap-5">
+        <ul class="flex gap-5">
+          <li><a href="/" class="duration-200 hover:text-yellow-500">Home</a></li>
+          <li><a href="" class="duration-200 hover:text-yellow-500">Gallery</a></li>
+          <li><a href="" class="duration-200 hover:text-yellow-500">Locations</a></li>
+          <li><a href="" class="duration-200 hover:text-yellow-500">Contact Us</a></li>
+        </ul>
+        <div class="mx-auto lg:mx-0">
+          <a href="/"
+            class="bg-pOrange px-5 py-2 duration-200 text-white rounded-full hover:bg-yellow-600 ">Get
+            a Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <section class="px-5 lg:px-0 bg-black py-10">
+      <div class="flex justify-center flex-col items-center gap-5">
+        <img src="./assets/divider-img.png" alt="" class="max-w-fit ">
+        <h1 class="text-white text-3xl text-center font-bold">MOBILE CAR-HEADLIGHTS RESTORATION IN
+          CENTRAL LONDON</h1>
+      </div>
+    </section>
+    <section class="px-5 xl:px-0 my-20 ">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <div class="min-h-[11rem]">
+            <img src="./assets/homepage/4-waranty.jpg" alt="4 Year Warranty"
+              class="mx-auto max-w-[10rem]  ">
+          </div>
+          <p class="italic text-center">We are here to present high quality service and allow our
+            work to exceed all expectations of professionalism and integrity</p>
+        </div>
+        <div>
+          <div class="min-h-[11rem]">
+            <img src="./assets/homepage/fast-logo.jpg" alt="4 Year Warranty"
+              class="mx-auto  max-w-[10rem]">
+          </div>
+          <p class="italic text-center">We provide fast and friendly mobile service because we know
+            your time is expensive</p>
+        </div>
+        <div>
+          <div class="min-h-[11rem]">
+            <img src="./assets/homepage/satisfaction.png" alt="4 Year Warranty"
+              class="mx-auto  max-w-[10rem]">
+          </div>
+          <p class="italic text-center">Our company work only with the high quality products which
+            are used big brand companies.</p>
+        </div>
+      </div>
+    </section>
+    <section class="px-5 xl:px-0 py-10 bg-black text-white">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="rounded-xl overflow-hidden">
+          <img src="./assets/bmw.jpg" alt="" class="rounded-xl mx-auto w-[80%] lg:w-full">
+        </div>
+        <div>
+          <div>
+            <img src="./assets/divider-img.png" alt="" class="mx-auto">
+            <h2 class="text-center my-5 text-2xl font-bold">Why we're so special</h2>
+            <p class="leading-8">Headlights Forever is professional car headlight restoration in
+              Central London. Our expert team is dedicated to restoring the clarity and appearance
+              of your headlights, ensuring optimal visibility and safety on the roads. Using premium
+              quality chemicals is the fastest and the most efficient method to get your headlights
+              looking like brand new for ages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-20 px-5 xl:px-0">
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-2xl font-bold mb-10">Why Choose Headlights Forever?</h3>
+        <ul class="">
+          <li>
+            <div class="flex gap-2 mt-3 items-center">
+              <img src="./assets/tick.png" alt="" class="w-5 h-5 ">
+              <strong>Cost-Effective:</strong>
+            </div>
+            <p class="mx-7">Restoring your headlights with us is a cost-effective alternative to
+              replacement. Our services are affordable, allowing you to save money while enhancing
+              the appearance and safety of your vehicle.</p>
+          </li>
+          <li>
+            <div class="flex gap-2 mt-3 items-center">
+              <img src="./assets/tick.png" alt="" class="w-5 h-5">
+              <strong>Mobile Service:</strong>
+            </div>
+            <p class="mx-7">We offer a convenient mobile service, covering various <a href="/"
+                class="underline">areas in London:</a> Hammersmith, Chelsea, South Kensington,
+              Westminster, the City of London, Wandsworth, Lambeth, and Merton. Our team can come to
+              your location, saving you time and hassle.</p>
+          </li>
+          <li>
+            <div class="flex gap-2 mt-3 items-center">
+              <img src="./assets/tick.png" alt="" class="w-5 h-5">
+              <strong>Expertise:</strong>
+            </div>
+            <p class="mx-7">Our experienced specialists are skilled in restoring headlights to their
+              original condition. We utilize advanced techniques and industry-leading tools to
+              deliver exceptional results.</p>
+          </li>
+          <li>
+            <div class="flex gap-2 mt-3 items-center">
+              <img src="./assets/tick.png" alt="" class="w-5 h-5">
+              <strong>Personalized Solutions:</strong>
+            </div>
+            <p class="mx-7">We understand that each car’s headlights are unique. Our restoration
+              process is tailored to your specific requirements, ensuring a customized approach for
+              optimal results.</p>
+          </li>
+          <li>
+            <div class="flex gap-2 mt-3 items-center">
+              <img src="./assets/tick.png" alt="" class="w-5 h-5">
+              <strong>Professional-Grade Products:</strong>
+            </div>
+            <p class="mx-7">We use high-quality professional-grade chemical products designed
+              specifically for headlight restoration. These products effectively remove oxidation,
+              discoloration, and haze, restoring clarity and brightness to your headlights.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="bg-black pt-10 pb-20 px-5 xl:px-0">
+      <div class="max-w-7xl mx-auto text-white">
+        <h2 class="text-3xl font-bold text-center py-10">7 Advantages Restoring Your Car Headlights
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto  gap-5">
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">Safety First</h4>
+            <p class="text-center">Your safety on the road is our top priority. By restoring your
+              headlights, we ensure optimal visibility, reducing the risk of accidents and improving
+              overall driving safety, especially during nightime travel.</p>
+          </div>
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">Revive to Perfection</h4>
+            <p class="text-center">Say goodbye to cloudy, oxidized, and yellowed headlights. Our
+              advanced restoration techniques bring back the glory of your old headlights,
+              transforming them into their original pristine condition. Enjoy a refreshed appearance
+              that enhances the overall aesthetics of your vehicle.</p>
+          </div>
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">Long-Lasting Results</h4>
+            <p class="text-center">Extend the lifespan of your headlights with our professional
+              restoration service. We address common issues such as fading and degradation,
+              preserving the quality and functionality of your headlights for years to come.</p>
+          </div>
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">Value Enhancement</h4>
+            <p class="text-center">Well-maintained and clear headlights contribute to the overall
+              value of your car. Whether you’re selling your vehicle or simply want to enjoy a
+              pristine look, our restoration service maximizes its resale value and curb appeal.</p>
+          </div>
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">Cost-Effective Solution</h4>
+            <p class="text-center">Say goodbye to hefty expenses associated with headlight
+              replacement. Our restoration service offers a cost-effective alternative, saving you
+              money without compromising on quality. Restore your headlights to their former glory
+              and enjoy the benefits of clear, bright illumination without breaking the bank.</p>
+          </div>
+          <div class="bg-pOrange py-10 px-5 rounded-xl">
+            <h4 class="font-semibold text-2xl mb-5 text-center">MOT Compliance Assurance</h4>
+            <p class="text-center">Ensure your car passes its MOT test with flying colors. Cloudy or
+              deteriorated headlights can lead to MOT failure. By restoring your headlights, you
+              eliminate the possibility of MOT failure, saving you the inconvenience and expense of
+              retesting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-5 xl:px-0">
+        <h2 class="text-center text-3xl font-bold my-10">Step-by-Step DIY Headlight Restoration</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2  gap-10">
+          <!-- step-1 -->
+          <div class="mx-auto ">
+            <img src="./assets/homepage/wash-headlights.png" alt=""
+              class="w-full min-h-[12rem] lg:min-h-[14rem] object-cover">
+            <div class="border px-5 min-h-[14rem] pb-2 md:pb-0">
+              <div class="flex items-center gap-2 py-5">
+                <div class="w-10 h-10 bg-yellow-500 flex justify-center items-center rounded-full">
+                  <span class=" text-xl">1</span>
+                </div>
+                <h4 class="text-xl font-semibold">Clean the Headlights</h4>
+              </div>
+              <hr class="mb-2">
+              <p>Start by thoroughly cleaning the headlights using a mild soap or automotive
+                cleaner. Remove any dirt, grime, or debris that may have accumulated on the surface.
+              </p>
+            </div>
+          </div>
+          <!-- step-2 -->
+          <div class="mx-auto">
+            <img src="./assets/homepage/sand-headlights.png" alt=""
+              class="w-full min-h-[12rem] lg:min-h-[14rem] object-cover">
+            <div class="border px-5 min-h-[14rem] pb-2 md:pb-0">
+              <div class="flex items-center gap-2 py-5 ">
+                <div class="w-10 h-10 bg-yellow-500 flex justify-center items-center rounded-full">
+                  <span class=" text-xl">2</span>
+                </div>
+                <h4 class="text-xl font-semibold">Sand the Headlights</h4>
+              </div>
+              <hr class="mb-2">
+              <p>Gently sand the headlights using fine-grit sandpaper. Begin with a lower grit to
+                remove any surface imperfections, then gradually move to a higher grit for a
+                smoother finish. Avoid excessive sanding, as it can damage the headlights. </p>
+            </div>
+          </div>
+          <!-- step-3 -->
+          <div class="mx-auto">
+            <img src="./assets/homepage/polish-headlights.png" alt=""
+              class="w-full min-h-[12rem] lg:min-h-[14rem] object-cover">
+            <div class="border px-5 min-h-[14rem] pb-2 md:pb-0">
+              <div class="flex items-center gap-2 py-5 ">
+                <div class="w-10 h-10 bg-yellow-500 flex justify-center items-center rounded-full">
+                  <span class=" text-xl">3</span>
+                </div>
+                <h4 class="text-xl font-semibold">Polish the Headlights</h4>
+              </div>
+              <hr class="mb-2">
+              <p>Apply a quality headlight polish to restore clarity and remove any remaining
+                scratches. Use a clean microfiber cloth and apply the polish in a circular motion.
+                Continue until the headlights regain their shine. Avoid using abrasive or harsh
+                polishes that may further damage the headlights.</p>
+            </div>
+          </div>
+          <!-- Step-4 -->
+          <div class="mx-auto">
+            <img src="./assets/homepage/seal-headlights.png" alt=""
+              class="w-full min-h-[12rem] lg:min-h-[14rem] object-cover">
+            <div class="border px-5 min-h-[14rem] pb-2 md:pb-0">
+              <div class="flex items-center gap-2 py-5 ">
+                <div class="w-10 h-10 bg-yellow-500 flex justify-center items-center rounded-full">
+                  <span class=" text-xl">4</span>
+                </div>
+                <h4 class="text-xl font-semibold">Seal the Headlights</h4>
+              </div>
+              <hr class="mb-2">
+              <p>Protect the restored headlights by applying a UV-resistant sealant or clear coat.
+                This will help prevent future yellowing and keep the headlights looking clear and
+                vibrant. Avoid using sealants that are not specifically designed for automotive
+                headlights, as they may not provide adequate protection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 bg-black text-white px-5 xl:px-0">
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-2xl font-semibold">Safety Tips and Precautions for DIY Headlight Restoration
+        </h3>
+        <ul class="mx-10 my-5">
+          <li class="list-disc mb-2">Work in a well-ventilated area to avoid inhaling fumes from
+            cleaning and polishing products.</li>
+          <li class="list-disc mb-2">Wear protective gloves, safety glasses, and a dust mask to
+            shield yourself from chemicals and debris.</li>
+          <li class="list-disc mb-2">Use caution when sanding to avoid damaging the surrounding
+            areas of the car.</li>
+          <li class="list-disc mb-2">Avoid using excessive force during the restoration process, as
+            it can lead to unintended damage to the headlights.</li>
+        </ul>
+      </div>
+      <div class="max-w-7xl mx-auto my-10">
+        <h3 class="text-2xl font-semibold">What to Avoid </h3>
+        <ul class="mx-10 my-5">
+          <li class="list-disc mb-2">Using household cleaning products or abrasive materials not
+            specifically designed for headlight restoration, as they may damage the headlights.</li>
+          <li class="list-disc mb-2">Skipping any of the necessary steps in the restoration process,
+            as each plays a crucial role in achieving the desired results.</li>
+          <li class="list-disc mb-2">Rushing through the restoration process. Take your time and
+            follow the instructions carefully for the best outcome.</li>
+          <li class="list-disc mb-2">Performing DIY headlight restoration if you feel unsure or lack
+            the necessary tools and expertise. In such cases, it’s recommended to seek professional
+            assistance.</li>
+        </ul>
+      </div>
+      <!-- 3rd Section tips -->
+      <div class="max-w-7xl mx-auto my-10">
+        <h3 class="text-2xl font-semibold mb-2">Maintaining and Extending the Lifespan of Headlights
+        </h3>
+        <p>To keep your restored headlights in optimal condition and prolong their lifespan, follow
+          these maintenance practices:</p>
+        <ol class="mx-10 my-5">
+          <li class="list-decimal mb-2">Using household cleaning products or abrasive materials not
+            specifically designed for headlight restoration, as they may damage the headlights.</li>
+          <li class="list-decimal  mb-2">Skipping any of the necessary steps in the restoration
+            process, as each plays a crucial role in achieving the desired results.</li>
+          <li class="list-decimal  mb-2">Rushing through the restoration process. Take your time and
+            follow the instructions carefully for the best outcome.</li>
+          <li class="list-decimal mb-2">Performing DIY headlight restoration if you feel unsure or
+            lack the necessary tools and expertise. In such cases, it’s recommended to seek
+            professional assistance.</li>
+        </ol>
+        <p class="text-xl py-5 leading-9 text-yellow-300">At <span class="font-semibold">Headlights
+            Forever</span>, we provide expert restoration services and share secret advice during
+          the process to ensure long-lasting results. Our techniques and high-quality materials keep
+          headlights clear for at least two years without additional maintenance.</p>
+      </div>
+    </section>
+    <!-- Faq -->
+    <section class="py-20 px-5 xl:px-0">
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-2xl font-semibold mb-10">Frequently Asked Questions</h3>
+        <ul class="accordion">
+          <!-- q1 -->
+          <li class="  rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="first">
+            <label for="first" class="font-semibold  cursor-pointer flex p-5 text-lg">Why do
+              headlights become cloudy, foggy or yellow?</label>
+            <div class="content ">
+              <p class="px-5  ">Headlights are typically made of polycarbonate plastic, which can be
+                affected by UV rays, environmental factors, and oxidation. This causes the
+                headlights to become cloudy or yellowed over time.</p>
+            </div>
+          </li>
+          <!-- q2 -->
+          <li class="  rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="second">
+            <label for="second" class="font-semibold  cursor-pointer flex p-5 text-lg">How long can
+              I expect the restored headlights to last?</label>
+            <div class="content">
+              <p class="px-5  ">Our restoration process is designed to provide long-lasting results.
+                When headlights are restored by our team and receive proper maintenance, they can
+                maintain their brand-new appearance for up to 4 years. Our restoration method,
+                combined with regular care, ensures that your headlights stay clear, bright, and
+                aesthetically pleasing for an extended period.</p>
+            </div>
+          </li>
+          <!-- q3 -->
+          <li class="  rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="third">
+            <label for="third" class="font-semibold  cursor-pointer flex p-5 text-lg">Is headlight
+              restoration a permanent solution?</label>
+            <div class="content">
+              <p class="px-5  text-brand-1/75">Headlight restoration is not a permanent solution, as
+                headlights will eventually degrade over time due to environmental factors and UV
+                exposure. However, regular maintenance and proper care can help prolong the results
+                of the restoration. </p>
+            </div>
+          </li>
+          <!-- q4 -->
+          <li class="  rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="fourth">
+            <label for="fourth" class="font-semibold  cursor-pointer flex p-5 text-lg">How much time
+              does it typically take to restore headlights?</label>
+            <div class="content">
+              <p class="px-5  ">Generally, DIY headlight restoration can take anywhere from 10
+                minutes to 30 minutes, depending on the specific restoration kit or method used.
+                Professional headlight restoration services usually take around 30 minutes to 1
+                hour. </p>
+            </div>
+          </li>
+          <!-- q5 -->
+          <li class=" rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="fifth">
+            <label for="fifth" class="font-semibold  cursor-pointer flex p-5 text-lg">How much does
+              headlight restoration cost?</label>
+            <div class="content">
+              <p class="px-5  ">The cost of headlight restoration (DIY or professional), depends on
+                car model and headlights damage. DIY restoration can range from £30 to £50, while
+                professional services typically cost between £65 to £120. </p>
+            </div>
+          </li>
+          <!-- q6 -->
+          <li class=" rounded-md shadow-lg mb-5 ">
+            <input type="checkbox" class="accordion-checkbox" name="accordion" id="sixth">
+            <label for="sixth" class="font-semibold  cursor-pointer flex p-5 text-lg">Can headlight
+              restoration remove scratches from headlights?</label>
+            <div class="content">
+              <p class="px-5 ">Yes, headlight restoration can help diminish the appearance of minor
+                scratches on headlights. However, deep or severe scratches may require additional
+                repair methods or even headlight replacement.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="py-10 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-center text-3xl font-semibold text-white">Ready to restore your headlights?
+        </h3>
+        <div class="flex justify-center items-center mt-5 ">
+          <a href="./contact"
+            class="px-5 py-2 bg-yellow-600 text-white font-semibold rounded-full">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-yellow-500 px-5 xl:px-0 py-5">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row gap-5 sm:gap-0 items-center justify-between">
+        <a href="/">
+          <div class="max-w-[16rem]">
+            <img src="./assets/headlights-logo.png" alt="">
+          </div>
+        </a>
+        <ul class="flex gap-5">
+          <li><a href="/" class="duration-200 ">Home</a></li>
+          <li><a href="" class="duration-200 ">Gallery</a></li>
+          <li><a href="" class="duration-200 ">Locations</a></li>
+          <li><a href="" class="duration-200 ">Contact Us</a></li>
+        </ul>
+      </div>
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-center flex-col border-t-2 border-t-black mt-5">
+        <span class="pt-2">© Headlights forever. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
